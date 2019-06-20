@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  attr_accessor :name, :email
+  # attr_accessor :name, :email, :password, :password_confirmation
   
   before_save { self.email = email.downcase }
   has_many :microposts
