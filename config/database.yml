@@ -21,8 +21,4 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: postgresql
-  pool: 5
-  timeout: 5000
-  encoding: unicode
-  database: bing5_production
+  url: <%= ENV['DATABASE_URL'] %>
